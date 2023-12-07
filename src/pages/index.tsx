@@ -1,1 +1,1 @@
-export { default } from "sitePage/components";
+export { default } from "user/components";
