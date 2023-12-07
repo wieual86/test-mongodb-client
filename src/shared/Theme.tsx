@@ -19,7 +19,6 @@ declare module "styled-components" {
 }
 
 const theme = {
-  font: "CooperHewitt",
   textColor: "black",
   overlayColor: "rgba(25, 25, 25, 0.9)",
   hoverBackColor: "rgb(230, 230, 230)",
@@ -29,8 +28,7 @@ const theme = {
   tooltipBackColor: "black",
   shadowColor: "rgba(0, 0, 0, 0.2)",
   borderColor: "rgb(200, 200, 200)",
-  background: `linear-gradient(rgba(255,255,255,.5), rgba(230,230,230,.5)),
-  url('/noise.svg');`
+  background: `linear-gradient(rgba(255,255,255,.5), rgba(230,230,230,.5));`
 };
 
 const Theme = ({ children }: baseProps) => <ThemeProvider {...{ theme }}>{children}</ThemeProvider>;
