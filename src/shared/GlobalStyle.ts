@@ -28,26 +28,6 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     vertical-align: middle;
   }
-  @font-face {
-    font-family: "CooperHewitt";
-    src: url("/fonts/CooperHewitt-Book.woff");
-  }
-  @font-face {
-    font-family: "CooperHewitt";
-    src: url("/fonts/CooperHewitt-BookItalic.woff");
-    font-style: italic;
-  }
-  @font-face {
-    font-family: "CooperHewitt";
-    src: url("/fonts/CooperHewitt-Semibold.woff");
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: "CooperHewitt";
-    src: url("/fonts/CooperHewitt-SemiboldItalic.woff");
-    font-style: italic;
-    font-weight: bold;
-  }
 `;
 
 export default GlobalStyle;

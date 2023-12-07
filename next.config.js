@@ -24,12 +24,6 @@ module.exports = {
     return config;
   },
   env: {
-    ...process.env,
-    NODE_ENV: undefined,
-    __NEXT_PROCESSED_ENV: undefined,
-    NODE_VERSION: undefined
-  },
-  future: {
-    webpack5: true
+    BACKEND_URL: process.env.BACKEND_URL
   }
 };

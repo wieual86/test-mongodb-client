@@ -13,6 +13,7 @@
     "@radix-ui/react-label": "^2.0.2",
     "@reduxjs/toolkit": "^2.0.1",
     "apollo-link-scalars": "^4.0.2",
+    "cross-fetch": "^4.0.0",
     "debounce": "^1.2.0",
     "graphql": "^16.8.1",
     "graphql-type-json": "^0.3.2",

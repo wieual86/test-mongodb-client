@@ -31,17 +31,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          <link rel="preload" href="/fonts/CooperHewitt-Book.woff" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/CooperHewitt-BookItalic.woff" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/CooperHewitt-Semibold.woff" as="font" crossOrigin="" />
-          <link
-            rel="preload"
-            href="/fonts/CooperHewitt-SemiboldItalic.woff"
-            as="font"
-            crossOrigin=""
-          />
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />

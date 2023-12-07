@@ -5,10 +5,12 @@ import apiActions from "api/actions";
 import userData, { user } from "user/reducerData";
 
 const getUserCall = gql`
-  query User {
+  query getUser {
     getUser {
       id
-      name
+      profile {
+        name
+      }
       personal {
         email
         familyName
@@ -20,7 +22,7 @@ const getUserCall = gql`
 `;
 
 const logoutCall = gql`
-  mutation User {
+  mutation logout {
     logout
   }
 `;
@@ -36,8 +38,11 @@ const getUser = () => async (dispatch: dispatch) => {
       data: { getUser: user }
     } = await dispatch(apiActions.query<getUserResponse>(getUserCall, undefined, true));
 
+    console.log(user);
+
     dispatch(reducerUtil.setSlice(userData, userData.user, user));
   } catch (error) {
+    console.log("no user");
     dispatch(reducerUtil.setSlice(userData, userData.user, undefined));
   }
 };
