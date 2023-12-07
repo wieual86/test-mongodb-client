@@ -1,0 +1,12 @@
+service: test-mongodb-client
+
+useDotenv: true
+
+test-mongodb-client:
+  component: "@sls-next/serverless-component@3.7.0"
+  inputs:
+    domain: ${env:CLIENT_URL}
+    runtime:
+      defaultLambda: "nodejs20.x"
+      apiLambda: "nodejs20.x"
+      imageLambda: "nodejs20.x"
